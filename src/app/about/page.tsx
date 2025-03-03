@@ -52,7 +52,7 @@ export default function AboutPage() {
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-lg -z-10"></div>
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-lg -z-10"></div>
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/face/h1.jpeg"
                   alt="Company founders"
                   width={600}
                   height={400}
@@ -135,31 +135,35 @@ export default function AboutPage() {
                 role: "Founder & CEO",
                 bio: "With over 20 years of experience in the painting industry, David founded PrimeCoat with a vision for quality and excellence.",
                 delay: 0,
+                image:'/face/h2.jpeg'
               },
               {
                 name: "Sarah Thompson",
                 role: "Lead Designer",
                 bio: "Sarah brings her expertise in color theory and interior design to help clients make the perfect color choices for their spaces.",
                 delay: 100,
+                image:'/face/h3.jpeg'
               },
               {
                 name: "Michael Rodriguez",
                 role: "Project Manager",
                 bio: "Michael ensures that every project runs smoothly, on time, and exceeds client expectations.",
                 delay: 200,
+                image:'/face/h4.jpeg'
               },
               {
                 name: "Jennifer Lee",
                 role: "Customer Relations",
                 bio: "Jennifer is dedicated to providing exceptional customer service and ensuring client satisfaction throughout the process.",
                 delay: 300,
+                image:'/face/h5.jpeg'
               },
             ].map((member, index) => (
               <ScrollReveal key={index} delay={member.delay}>
                 <div className="bg-background rounded-xl shadow-sm border border-border/50 overflow-hidden hover-lift">
                   <div className="h-64 bg-muted relative">
                     <Image
-                      src="/placeholder.svg?height=400&width=300"
+                      src={member.image}
                       alt={member.name}
                       fill
                       className="object-cover"
@@ -223,7 +227,7 @@ export default function AboutPage() {
 
               <ScrollReveal delay={200}>
                 <Image
-                  src="/placeholder.svg?height=500&width=700"
+                  src="/assests/bxpnt.avif"
                   alt="Our painting team at work"
                   width={500}
                   height={350}

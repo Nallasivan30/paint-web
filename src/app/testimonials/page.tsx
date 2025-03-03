@@ -11,7 +11,7 @@ export default function TestimonialsPage() {
       {/* Hero Section */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/placeholder.svg?height=1080&width=1920" alt="Happy clients" fill className="object-cover" />
+          <Image src="/face/h5.jpeg" alt="Happy clients" fill className="object-cover" />
           <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
         </div>
 
@@ -50,7 +50,7 @@ export default function TestimonialsPage() {
                 <div className="flex items-center justify-center">
                   <div className="h-16 w-16 rounded-full bg-muted mr-4 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=100&width=100"
+                      src="/face/h1.jpeg"
                       alt="Jennifer Wilson"
                       width={64}
                       height={64}
@@ -144,7 +144,7 @@ export default function TestimonialsPage() {
                   <div className="flex items-center">
                     <div className="h-10 w-10 rounded-full bg-primary/20 mr-3 overflow-hidden">
                       <Image
-                        src="/placeholder.svg?height=50&width=50"
+                        src="/face/h3.jpeg"
                         alt={testimonial.name}
                         width={40}
                         height={40}
@@ -181,7 +181,7 @@ export default function TestimonialsPage() {
                 <div className="bg-background rounded-xl shadow-sm border border-border/50 overflow-hidden hover-lift">
                   <div className="aspect-video bg-muted relative">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/assests/dmo.webp"
                       alt="Video thumbnail"
                       fill
                       className="object-cover"
@@ -228,7 +228,7 @@ export default function TestimonialsPage() {
                   className="bg-transparent text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground/10"
                   asChild
                 >
-                  <Link href="/services">Explore Our Services</Link>
+                  <Link href="/service">Explore Our Services</Link>
                 </Button>
               </div>
             </ScrollReveal>

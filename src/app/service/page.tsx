@@ -54,7 +54,7 @@ export default function ServicesPage() {
                   "Color consultation",
                   "Drywall repair and preparation",
                 ],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/assests/bw.jpg",
                 delay: 0,
               },
               {
@@ -69,7 +69,7 @@ export default function ServicesPage() {
                   "Pressure washing",
                   "Weatherproofing and sealing",
                 ],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/assests/brs.webp",
                 delay: 100,
               },
               {
@@ -84,7 +84,7 @@ export default function ServicesPage() {
                   "Low-VOC paint options",
                   "Multi-unit property painting",
                 ],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/assests/bluwh.jpg",
                 delay: 200,
               },
               {
@@ -99,7 +99,7 @@ export default function ServicesPage() {
                   "Hardware replacement",
                   "Protective topcoat application",
                 ],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/assests/bktpnt.jpg",
                 delay: 300,
               },
               {
@@ -114,7 +114,7 @@ export default function ServicesPage() {
                   "Color scheme coordination",
                   "Trend and style guidance",
                 ],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/assests/mlt.webp",
                 delay: 400,
               },
               {
@@ -129,7 +129,7 @@ export default function ServicesPage() {
                   "Stenciling and patterns",
                   "Mural and accent designs",
                 ],
-                image: "/placeholder.svg?height=400&width=600",
+                image: "/assests/cmp.avif",
                 delay: 500,
               },
             ].map((service, index) => (
@@ -277,7 +277,7 @@ export default function ServicesPage() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="aspect-square relative rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/assests/bw.jpg"
                     alt="Premium paint products"
                     fill
                     className="object-cover hover-scale"
@@ -285,7 +285,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="aspect-square relative rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/assests/blk.avif"
                     alt="Professional painting tools"
                     fill
                     className="object-cover hover-scale"
@@ -293,7 +293,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="aspect-square relative rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/assests/twpl.avif"
                     alt="Eco-friendly paint options"
                     fill
                     className="object-cover hover-scale"
@@ -301,7 +301,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="aspect-square relative rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/assests/bw.jpg"
                     alt="Specialized coatings"
                     fill
                     className="object-cover hover-scale"
