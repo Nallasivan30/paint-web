@@ -4,6 +4,7 @@ import { ArrowRight, Check, Star, PaintBucket, Home, Building2, Brush } from "lu
 import { Button } from "@/components/ui/button"
 import ScrollReveal from "@/components/scroll-reveal"
 import RootLayout from "@/components/layout"
+import React from "react"
 
 export default function HomePage() {
   return (
@@ -12,7 +13,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/assests/hndpt.jpg"
             alt="Painting professionals at work"
             fill
             className="object-cover"
@@ -66,73 +67,80 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <ScrollReveal>
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl font-bold sm:text-4xl mb-4">Our Professional Services</h2>
-              <p className="text-muted-foreground text-lg">
-                We offer a wide range of painting services to meet all your needs, from interior to exterior painting.
-              </p>
-            </div>
-          </ScrollReveal>
+<section className="py-20 bg-muted/50">
+  <div className="container mx-auto px-4">
+    <ScrollReveal>
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <h2 className="text-3xl font-bold sm:text-4xl mb-4">Our Professional Services</h2>
+        <p className="text-muted-foreground text-lg">
+          We offer a wide range of painting services to meet all your needs, from interior to exterior painting.
+        </p>
+      </div>
+    </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Home className="h-10 w-10 text-primary" />,
-                title: "Residential Interior",
-                description:
-                  "Transform your home with our premium interior painting services, creating beautiful and lasting finishes.",
-                delay: 0,
-              },
-              {
-                icon: <Building2 className="h-10 w-10 text-primary" />,
-                title: "Commercial Painting",
-                description: "Professional painting solutions for offices, retail spaces, and commercial buildings.",
-                delay: 100,
-              },
-              {
-                icon: <PaintBucket className="h-10 w-10 text-primary" />,
-                title: "Exterior Painting",
-                description:
-                  "Protect and beautify your property's exterior with our durable and weather-resistant paints.",
-                delay: 200,
-              },
-              {
-                icon: <Brush className="h-10 w-10 text-primary" />,
-                title: "Cabinet Refinishing",
-                description: "Give your kitchen a fresh new look with our cabinet refinishing and painting services.",
-                delay: 300,
-              },
-              {
-                icon: <Check className="h-10 w-10 text-primary" />,
-                title: "Color Consultation",
-                description: "Our color experts will help you choose the perfect palette for your space.",
-                delay: 400,
-              },
-              {
-                icon: <Check className="h-10 w-10 text-primary" />,
-                title: "Deck & Fence Staining",
-                description: "Protect and enhance your outdoor wooden surfaces with our staining services.",
-                delay: 500,
-              },
-            ].map((service, index) => (
-              <ScrollReveal key={index} delay={service.delay} className="h-full">
-                <div className="bg-background rounded-xl p-6 shadow-sm border border-border/50 hover-lift h-full">
-                  <div className="mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground mb-4">{service.description}</p>
-                  <Link href="/service" className="text-primary font-medium inline-flex items-center hover:underline">
-                    Learn more
-                    <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </div>
-              </ScrollReveal>
-            ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        {
+          icon: <Home className="h-10 w-10" />,  
+          title: "Residential Interior",
+          description:
+            "Transform your home with our premium interior painting services, creating beautiful and lasting finishes.",
+          delay: 0,
+          color: "border-red-500 text-red-500",
+        },
+        {
+          icon: <Building2 className="h-10 w-10" />,
+          title: "Commercial Painting",
+          description: "Professional painting solutions for offices, retail spaces, and commercial buildings.",
+          delay: 100,
+          color: "border-blue-500 text-blue-500",
+        },
+        {
+          icon: <PaintBucket className="h-10 w-10" />,
+          title: "Exterior Painting",
+          description:
+            "Protect and beautify your property's exterior with our durable and weather-resistant paints.",
+          delay: 200,
+          color: "border-green-500 text-green-500",
+        },
+        {
+          icon: <Brush className="h-10 w-10" />,
+          title: "Cabinet Refinishing",
+          description: "Give your kitchen a fresh new look with our cabinet refinishing and painting services.",
+          delay: 300,
+          color: "border-yellow-500 text-yellow-500",
+        },
+        {
+          icon: <Check className="h-10 w-10" />,
+          title: "Color Consultation",
+          description: "Our color experts will help you choose the perfect palette for your space.",
+          delay: 400,
+          color: "border-purple-500 text-purple-500",
+        },
+        {
+          icon: <Check className="h-10 w-10" />,
+          title: "Deck & Fence Staining",
+          description: "Protect and enhance your outdoor wooden surfaces with our staining services.",
+          delay: 500,
+          color: "border-pink-500 text-pink-500",
+        },
+      ].map((service, index) => (
+        <ScrollReveal key={index} delay={service.delay} className="h-full">
+          <div className={`bg-background rounded-xl p-6 shadow-sm border-2 ${service.color} hover-lift h-full`}>
+            <div className={`mb-4 ${service.color}`}>{React.cloneElement(service.icon, { className: `h-10 w-10 ${service.color}` })}</div>
+            <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+            <p className="text-muted-foreground mb-4">{service.description}</p>
+            <Link href="/service" className="text-primary font-medium inline-flex items-center hover:underline">
+              Learn more
+              <ArrowRight className="ml-1 h-4 w-4" />
+            </Link>
           </div>
-        </div>
-      </section>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Why Choose Us Section */}
       <section className="py-20">
@@ -143,7 +151,7 @@ export default function HomePage() {
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 rounded-lg -z-10"></div>
                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-lg -z-10"></div>
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/assests/bluwh.jpg"
                   alt="Professional painters at work"
                   width={600}
                   height={400}
@@ -296,7 +304,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary-foreground/10 rounded-lg -z-10"></div>
                 <Image
-                  src="/placeholder.svg?height=500&width=700"
+                  src="/assests/twpl.avif"
                   alt="Beautifully painted interior"
                   width={500}
                   height={350}

@@ -23,7 +23,7 @@ const galleryItems = [
     title: "Modern Living Room Transformation",
     description: "Complete interior painting with accent wall and trim work.",
     category: "interior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/bw.jpg",
     tags: ["Living Room", "Accent Wall", "Neutral Tones"],
   },
   {
@@ -31,7 +31,7 @@ const galleryItems = [
     title: "Craftsman Home Exterior",
     description: "Full exterior painting with trim detail and front door accent.",
     category: "exterior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/ani.avif",
     tags: ["Exterior", "Craftsman", "Bold Colors"],
   },
   {
@@ -39,7 +39,7 @@ const galleryItems = [
     title: "Retail Store Renovation",
     description: "Commercial painting project for a local boutique.",
     category: "commercial",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/bktpnt.jpg",
     tags: ["Commercial", "Retail", "Brand Colors"],
   },
   {
@@ -47,7 +47,7 @@ const galleryItems = [
     title: "Kitchen Cabinet Refinishing",
     description: "Complete cabinet refinishing with custom color matching.",
     category: "interior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/blk.avif",
     tags: ["Kitchen", "Cabinets", "White"],
   },
   {
@@ -55,7 +55,7 @@ const galleryItems = [
     title: "Faux Finish Accent Wall",
     description: "Specialty finish creating a textured look for a dining room.",
     category: "specialty",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/bluwh.jpg",
     tags: ["Dining Room", "Faux Finish", "Texture"],
   },
   {
@@ -63,7 +63,7 @@ const galleryItems = [
     title: "Colonial Home Exterior",
     description: "Classic colonial home with traditional color scheme.",
     category: "exterior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/brs.webp",
     tags: ["Exterior", "Colonial", "Traditional"],
   },
   {
@@ -71,7 +71,7 @@ const galleryItems = [
     title: "Office Space Renovation",
     description: "Commercial office painting with brand-aligned colors.",
     category: "commercial",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/bxpnt.avif",
     tags: ["Commercial", "Office", "Corporate"],
   },
   {
@@ -79,7 +79,7 @@ const galleryItems = [
     title: "Master Bedroom Suite",
     description: "Calming color palette for a master bedroom retreat.",
     category: "interior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/cmp.avif",
     tags: ["Bedroom", "Calming", "Neutral"],
   },
   {
@@ -87,7 +87,7 @@ const galleryItems = [
     title: "Venetian Plaster Feature Wall",
     description: "Luxury finish for an entryway statement wall.",
     category: "specialty",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/dmo.webp",
     tags: ["Entryway", "Venetian Plaster", "Luxury"],
   },
   {
@@ -95,7 +95,7 @@ const galleryItems = [
     title: "Contemporary Kitchen",
     description: "Bright and airy kitchen with custom cabinet painting.",
     category: "interior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/hndpt.jpg",
     tags: ["Kitchen", "Contemporary", "Bright"],
   },
   {
@@ -103,7 +103,7 @@ const galleryItems = [
     title: "Victorian Home Restoration",
     description: "Historical color scheme for a Victorian home exterior.",
     category: "exterior",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/nbrs.jpeg",
     tags: ["Exterior", "Victorian", "Historical"],
   },
   {
@@ -111,7 +111,7 @@ const galleryItems = [
     title: "Restaurant Interior",
     description: "Vibrant commercial painting for a local restaurant.",
     category: "commercial",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/assests/wdn.jpg",
     tags: ["Commercial", "Restaurant", "Vibrant"],
   },
 ]
