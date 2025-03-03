@@ -3,7 +3,7 @@ import Link from "next/link"
 import { ArrowRight, Check, PaintBucket, Home, Building2, Brush, Palette, Droplet } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import ScrollReveal from "@/components/scroll-reveal"
-import RootLayout from "../layout"
+import RootLayout from "@/components/layout"
 
 export default function ServicesPage() {
   return (
